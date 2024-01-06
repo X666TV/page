@@ -1,0 +1,127 @@
+# THIS IS AN EXAMPLE ON HOW YOU SHOULD CONFIGURE YOUR hugo.toml
+# See this hugo.toml in action at https://github.com/1bl4z3r/hermit-V2/blob/staging/hugo.toml
+# Example Site is Staging branch, acessible at https://github.com/1bl4z3r/hermit-V2/tree/staging
+# To see what each config does, refer to https://1bl4z3r.github.io/hermit-V2/en/posts/explaining-configs/
+# Open Issue or Pull Request at https://github.com/1bl4z3r/hermit-V2
+
+baseURL = "localhost"
+defaultContentLanguage = "zh"
+defaultContentLanguageInSubdir = true
+theme = "hermit-v2"
+
+[languages] # 多语言
+ [languages.zh]
+   title = '知诸的秘密花园'
+   languageName = "简体中文"
+   [languages.zh.params]
+     homeSubtitle = "学无止境"
+     bgImg = "/background.jpg" # 背景图
+   weight = 1
+ [languages.en]
+   title = "XTW's Secret Garden"
+   languageName = "English"
+   [languages.en.params]
+     homeSubtitle = "Keep trying,and keep learning."
+     bgImg = "/background-en.jpg" # 背景图
+   weight = 2
+#  [languages.it]
+#    title = 'CHANGE ME(IT)'
+#    [languages.it.params]
+#      homeSubtitle = "CHANGE ME"
+#    weight = 3
+ 
+languageCode = "zh"
+
+# title = ""
+# enableGitInfo = true
+
+pygmentsCodefences  = true # 语法高亮
+pygmentsUseClasses  = true # 高亮格式化
+# If Chinese/Japanese/Korean is your main content language, 
+# enable this to make wordCount works right.
+hasCJKLanguage = true
+
+
+rssLimit = 10 # RSS 源中的最大项目数。
+
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+enableEmoji = true
+
+# googleAnalytics = "UA-123-45" 
+# disqusShortname = "CHANGE ME" # disqus是第三方评论系统
+
+[params.author]
+  name = "spider"
+  about = "about" # 对应about.md 
+
+[blackfriday]
+  # hrefTargetBlank = true
+  # noreferrerLinks = true
+  # nofollowLinks = true
+
+[taxonomies] # 分类法
+  tag = "tags"
+  # Categories are disabled by default.
+  # category = "categories"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  description = "A site no one knows"
+  # images = ["https://s1.ax1x.com/2022/04/05/qLGSB9.png"] # 站点图标
+  themeColor = "#99CCFF" # "#494f5c"
+
+  # homeSubtitle = "CHANGE ME HOME SUBTITLE"
+  footerCopyright = ' <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  # bgImg = "/background.jpg" # 背景图
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  # gitUrl = "https://github.com/1bl4z3r/hermit-V2/tree/staging"
+
+  # Set “text-align: justify” to .content. Toggling 
+  # this option needs to rebuild SCSS, requires Hugo extended version.
+  justifyContent = false
+
+  relatedPosts = true # Add a related content section to all single posts page
+  code_copy_button = true 
+
+  homeSubtitlePrinter = true # Subtitle打字动画
+  scrollToTop = true # 全站启用回到顶部按钮
+  global_mathjax = false # 全局mathjax支持
+  readTime = true #显示阅读时间
+  readTimeSeparator = " | " # 指定 wordCount 和 readTime 之间的分隔符
+  # legacyLayout = false # 启用旧版布局（帖子信息位于内容下方）
+  shareSocial = true # 显示社交共享链接
+  # googleTagManager = "GTM-XXXXXXXX" # 为 Google 跟踪代码管理器启用脚本
+  # tagSymbol = "#" # 指定标签的符号，默认值为#
+  # categorySymbol = "⊲" # 指定分类的符号
+  
+  # [[params.socialLinks]]
+  #   name = "qq"
+  #   url = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey"
+
+  # [[params.socialLinks]]
+  #   name = "x"
+  #   url = "https://twitter.com/"
+
+  [[params.socialLinks]]
+    name = "bilibili"
+    url = "https://space.bilibili.com/509217324"
+
+  [[params.socialLinks]]
+    name = "github"
+    url = "https://github.com/1bl4z3r/hermit-V2/tree/staging"
+
+[menu]
+
+  [[menu.main]]
+    name = "Posts"
+    url = "posts/"
+    weight = 10
+
+  [[menu.main]]
+    name = "About"
+    url = "about/"
+    weight = 20
