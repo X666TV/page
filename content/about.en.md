@@ -5,4 +5,4 @@ draft : false
 toc : false
 ---
 
-This site is made with [Hugo](https://gohugo.io/) and theme [Hermit-V2](https://themes.gohugo.io/themes/hermit-v2/), hosted on GitHub and Vercel.
+This site is made with [Hugo](https://gohugo.io/) and theme [Hermit-V2](https://themes.gohugo.io/themes/hermit-v2/), hosted on GitHub and Cloudflare.
