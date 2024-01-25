@@ -15,16 +15,17 @@ theme = "hermit-v2"
    languageName = "简体中文"
    [languages.zh.params]
      homeSubtitle = "学无止境"
-     bgImg = "/background.jpg"
-    #  bgImg = "https://s3.bmp.ovh/imgs/2024/01/06/582ae37c72c6c9e7.jpg" # 背景图
+     leftImg = "https://s3.bmp.ovh/imgs/2024/01/25/4116ec7fbd424360.jpg"
+     rightImg = "https://s3.bmp.ovh/imgs/2024/01/25/3430f80320e7759b.jpg"
+
    weight = 1
  [languages.en]
    title = "XTW's Secret Garden"
    languageName = "English"
    [languages.en.params]
      homeSubtitle = "Keep trying,and keep learning."
-     bgImg = "/background-en.jpg"
-    #  bgImg = "https://s3.bmp.ovh/imgs/2024/01/06/7c9d0ec4f3909596.jpg" # 背景图
+     leftImg = "/background-en.jpg"
+
    weight = 2
 #  [languages.it]
 #    title = 'CHANGE ME(IT)'
@@ -34,6 +35,7 @@ theme = "hermit-v2"
  
 languageCode = "zh"
 title = '缷TV的秘密花园'
+# bgImg = "https://s3.bmp.ovh/imgs/2024/01/06/7c9d0ec4f3909596.jpg" # 背景图
 # enableGitInfo = true
 
 pygmentsCodefences  = true # 语法高亮

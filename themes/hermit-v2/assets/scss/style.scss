@@ -512,7 +512,7 @@ p.img-404 {
   cursor: pointer;
 }
 
-// My CSS
+// My CSS ---------------------------------
 .container {
   width: 100vw;
   height: 100vh;
@@ -523,21 +523,43 @@ p.img-404 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  // transition: opacity .5s;
+
+  display: flex;
+  flex-direction: row;
 }
+
 .show-bg {
   opacity: 0.4;
   transition: opacity 2s ease-in-out;
 }
-.bgImage {
-  width: 100vw;
-  height: 100vh;
-  // opacity: 1;
-  z-index: -1;
-  position: fixed;
-  top: 0;
+
+.box{
+  flex: 1;
 }
 
+.left-img{
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: relative;
+  object-fit:cover;
+  user-select:none;
+}
+.set-right{
+  object-position: right;
+}
+
+.right-img{
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: relative;
+  object-fit:cover;
+  object-position: left;
+  user-select:none;
+}
+
+//-------------------------------------------
 
 .post-header {
   margin-top: 1.2em;

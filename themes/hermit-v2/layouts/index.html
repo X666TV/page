@@ -9,20 +9,16 @@
 {{ end }}
 
 {{ define "main" }}
-	{{- if (or .Site.Params.images .Site.Params.bgImg) }}
-	<!-- <div class="bg-img"></div> -->
+	{{- if .Site.Params.leftImg }}
 	<div class="container">
-		<img class="bgImage">
-		<script>
-			const img=document.querySelector(".bgImage")
-			img.src= "{{.Site.Params.bgImg}}";
-			img.onload=()=>{
-				setTimeout(function(){
-					const container=document.querySelector(".container")
-					container.classList.add("show-bg")
-				},50)
-			}
-		</script>	
+		<div class="box">
+			<img class="left-img" alt="left-part" src="{{.Site.Params.leftImg}}">
+		</div>
+		{{- if .Site.Params.rightImg }}
+		<div class="box">
+			<img class="right-img" alt="right-part" src="{{.Site.Params.rightImg}}">
+		</div>
+		{{- end }}
 	</div>
 	{{- end }}
 	<div id="spotlight" class="animated fadeIn">

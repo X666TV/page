@@ -117,3 +117,36 @@ if (header !== null) {
     }
   }, 250));
 }
+
+// My Js --------------------------------------
+
+// Homepage Background Lazy Load
+var leftLoaded=false
+var rightLoaded=null
+const allLoaded=()=>{
+  if(leftLoaded==true && (rightLoaded==null || rightLoaded==true)){
+    setTimeout(function(){
+    const container=document.querySelector(".container")
+    container.classList.add("show-bg")
+  },50)
+}
+}
+const leftImg=document.querySelector(".left-img")
+if(leftImg!=null){
+  leftImg.onload=()=>{
+    leftLoaded=true
+    allLoaded()
+  }
+}
+const rightImg=document.querySelector(".right-img")
+if(rightImg!=null){
+  leftImg.classList.add("set-right")
+  rightImg.onload=()=>{
+    rightLoaded=true
+    allLoaded()
+  }
+}
+
+      
+
+			
