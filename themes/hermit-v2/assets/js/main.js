@@ -146,7 +146,3 @@ if(rightImg!=null){
     allLoaded()
   }
 }
-
-      
-
-			

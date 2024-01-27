@@ -13,10 +13,11 @@ hasCJKLanguage : true
 早期整活，修复了图片再次发布
 {{< /admonition >}}
 
-_ 想要零基础建个网站？_
-_ 想要让旧手机发挥余热？_
-_ 想建个个人博客但不知道怎么做？_
-_ 那么看这篇文章就对了_
+_想要零基础建个网站？_
+_想要让旧手机发挥余热？_
+_想建个个人博客但不知道怎么做？_
+_那么看这篇文章就对了_
+
 ## 简介
 ksweb是一个安卓app，也是一个集成php服务器环境。用ksweb你可以在手机上轻松搭建Apache/nginx/litghttpd+php+mysql环境。你现在正在浏览的网站就是我用ksweb建的 ,如果你也想整一个，请往下看，这个小白为小白写的教程将带你轻松用手机建个网站。如果中途出现了问题可以参考教程的最后，由于我也是个小白，没法讲清楚所有东西，所以如果有不明白的还可以百度自行寻找解决办法。
 
@@ -44,7 +45,7 @@ ksweb是一个安卓app，也是一个集成php服务器环境。用ksweb你可�
 __phpmyadmin初始账户是root，密码为空__
 登录进去后记得改密码
 
-![修改密码](/images/build-a-blog/ch-pswd.jpg)
+{{< figure src="/images/build-a-blog/ch-pswd.jpg" alt="image" caption="修改密码" class="normal" >}}
 
 进入PHP栏，选择PHP版本，最好选7.4.0及之后的版本，有时你会发现没得选，可以按照他的提示安装拓展，安装完后，就会发现多了许多PHP版本可选。还有时候会提示有新版本可升级，可以根据需要升级。
 
@@ -54,9 +55,9 @@ __phpmyadmin初始账户是root，密码为空__
 2. 创建数据库:进入phpmyadmin数据库界面，创建一个数据库，记住数据库名，之后要用。
 {{< figure src="/images/build-a-blog/create-db.jpg" alt="image" caption="创建数据库" class="right" >}}
 3. 安装:浏览器访问http://localhost:8080/install ，就是之前那个测试页面的链接后面加了个"/install"，(其实有时候不加也没问题)，进入安装界面，要注意以下三点，其他地方如果不清楚就保持默认，然后“确认，开始安装”
-![步骤2.png][13]
+{{< figure src="/images/build-a-blog/install.png" alt="image" caption="" class="left" >}}
 4. 安装好了就会进入博客后台管理界面，然后你就可以开始写博客了，现在你可以在局域网内访问你的博客，地址为http://IP地址:端口 ，就是把localhost换成手机的IP地址，ip地址显示在ksweb状态栏，例如按下图就用http://10.241.120.170:8080访问博客网站，用http://10.241.120.170:8080/admin进入后台。
-![ip][14]
+{{< figure src="https://s3.bmp.ovh/imgs/2022/04/06/d4487aebdd31d228.png" alt="image" caption="ip">}}
 5. 恭喜你成功建立了一个属于自己的博客，博客平台的使用就得靠你自己探索了，typecho支持安装插件和切换主题，推荐一个网站https://typecho.me/ 里面有许多免费的主题和插件，下载下来解压后，主题放在/htdocs/usr/themes文件夹下，插件放在/htdocs/usr/plugins文件夹下，然后就可以在后台[控制台]看到了。
 
 ## 一些可能遇到的问题
@@ -83,8 +84,6 @@ __phpmyadmin初始账户是root，密码为空__
 [10]: http://typecho.org/
 [11]: https://baike.baidu.com/item/markdown/3245829
 
-[13]: /images/build-a-blog/install.png
-[14]: https://s3.bmp.ovh/imgs/2022/04/06/d4487aebdd31d228.png
 [15]: https://s3.bmp.ovh/imgs/2022/04/06/1a25b6c993a833c2.png
 [16]: https://s3.bmp.ovh/imgs/2022/04/06/0c5434fd277d25d0.png
 [17]: https://wwc.lanzouw.com/iGNdY02rxabe

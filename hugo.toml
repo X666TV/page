@@ -125,6 +125,11 @@ enableEmoji = true
     weight = 10
 
   [[menu.main]]
+    name = "ヾ(≧ ▽ ≦)ゝ"
+    url = "playground/"
+    weight = 1
+
+  [[menu.main]]
     name = "About"
     url = "about/"
     weight = 20
