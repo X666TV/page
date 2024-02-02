@@ -19,11 +19,11 @@ _想建个个人博客但不知道怎么做？_
 _那么看这篇文章就对了_
 
 ## 简介
-ksweb是一个安卓app，也是一个集成php服务器环境。用ksweb你可以在手机上轻松搭建Apache/nginx/litghttpd+php+mysql环境。你现在正在浏览的网站就是我用ksweb建的 ,如果你也想整一个，请往下看，这个小白为小白写的教程将带你轻松用手机建个网站。如果中途出现了问题可以参考教程的最后，由于我也是个小白，没法讲清楚所有东西，所以如果有不明白的还可以百度自行寻找解决办法。
+ksweb是一个安卓app，也是一个集成php服务器环境。用ksweb你可以在手机上轻松搭建Apache/nginx/litghttpd+php+mysql环境。你现在正在浏览的网站就是我用ksweb建的 ,如果你也想整一个，请往下看。如果中途出现了问题可以参考教程的最后，由于我也是个小白，没法讲清楚所有东西，所以如果有不明白的还可以百度自行寻找解决办法。
 
 ## 下载一个可以用的ksweb
 
-我们只需要用到一个软件ksweb,这个软件是付费的，但百度可以很容易找到汉化破解版，尽量找较新的版本安装，以避免不必要的麻烦。
+我们只需要用到一个软件ksweb,百度可以很容易找到汉化版，尽量找较新的版本安装，以避免不必要的麻烦。
 打开后的界面是这样的
 {{< figure src="/images/build-a-blog/ksweb.png" alt="image" caption="ksweb主界面" class="right" >}}
 
@@ -71,8 +71,6 @@ __phpmyadmin初始账户是root，密码为空__
 ### 手动安装/升级phpmyadmin
 下载phpmyadmin最新安装包，解压至/ksweb/tools目录下，文件夹命名为phpMyAdmin，替换掉原有的phpMyAdmin文件夹(两个文件夹内容应该差别不大，可以稍微注意一下)，正常情况下至此就完成升级了，可以打开phpmyadmin看看有没有问题，如果有问题可以尝试删除原有主机，重启ksweb，检查文件夹内容等方法，还有可能你下的不是安装包而是源码，那么可以试试在链接后加个/setup，例如http://localhost:8001/setup  也可以试试点ksweb的PHP栏下的composer START。
 
-*懒人专用：*
-[ksweb安装包，密码3asi][17]
 
 [2]: https://baike.baidu.com/item/lighttpd/6735570
 [3]: https://baike.baidu.com/item/nginx/3817705
@@ -86,4 +84,3 @@ __phpmyadmin初始账户是root，密码为空__
 
 [15]: https://s3.bmp.ovh/imgs/2022/04/06/1a25b6c993a833c2.png
 [16]: https://s3.bmp.ovh/imgs/2022/04/06/0c5434fd277d25d0.png
-[17]: https://wwc.lanzouw.com/iGNdY02rxabe
