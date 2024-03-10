@@ -15,8 +15,11 @@ theme = "hermit-v2"
    languageName = "简体中文"
    [languages.zh.params]
      homeSubtitle = "学无止境"
-     leftImg = "https://s3.bmp.ovh/imgs/2024/01/25/4116ec7fbd424360.jpg"
-     rightImg = "https://s3.bmp.ovh/imgs/2024/01/25/3430f80320e7759b.jpg"
+     # 只有leftImg,则leftImg全屏显示
+     leftImg = "https://img.nickyam.com/file/5f1bc56a7f0fbfdbf0221.jpg"
+    #  leftImg = "https://s3.bmp.ovh/imgs/2024/01/25/4116ec7fbd424360.jpg"
+     # 既有leftImg,又有rightImg,则各显示一半
+    #  rightImg = "https://s3.bmp.ovh/imgs/2024/01/25/3430f80320e7759b.jpg"
 
    weight = 1
  [languages.en]

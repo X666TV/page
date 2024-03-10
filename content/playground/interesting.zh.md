@@ -9,6 +9,8 @@ toc : false
 
 我发现了一些有意思的网站
 
+[在线红白机模拟器](https://may-fly.gitee.io/#/nes-game)
+
 {{< admonition warning >}}
 以下网站可能含有闪烁的图片
 {{< /admonition >}}
