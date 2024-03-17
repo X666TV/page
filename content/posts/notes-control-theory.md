@@ -34,43 +34,41 @@ $$L[f(t)]=F(s)=\int_{0}^{\infty}f(t)e^{-st}dt$$
 
 2. (时域)微分定理：$L[f'(t)]=sF(s)-f(0)$
 
-3. (时域)积分定理：$L[\int_{0}^{t}{f(t)dt}]=\frac{1}{s}F(s)+\frac{1}{s}f^{-1}(0)$ 
+3. (时域)积分定理：$L[\int_{0}^{t}{f(t)dt}]=\frac{1}{s}F(s)+\frac{1}{s}f^{-1}(0)$
 
-  *微分定理和积分定理本质上是一样的，把微分定理中的导函数换成普通函数，则函数变成其原函数，再移项即可得积分定理*
+   - 微分定理和积分定理本质上是一样的，把微分定理中的导函数换成普通函数，则函数变成其原函数，再移项即可得积分定理
 
 4. 位移定理：正正反反（正变换位移符号不变，反变换位移符号相反）
 
-  正：$$L[f(t-\tau)]=e^{-\tau s}F(s)$$
+   - 正：$$L[f(t-\tau)]=e^{-\tau s}F(s)$$
 
-  反：$$F(s+a)=L[e^{-at}f(t)]$$
+   - 反：$$F(s+a)=L[e^{-at}f(t)]$$
 
 5. 终值定理：$\lim\limits_{t \to\infty }{f(t)} =\lim\limits_{s \to 0}{sF(s)}$
 
 6. 初值定理：$\lim\limits_{t \to 0}{f(t)} =\lim\limits_{s \to \infty}{sF(s)}$
 
-  *终值定理和初值定理的使用条件是各极限存在*
+   - 终值定理和初值定理的使用条件是各极限存在
 
 7. 卷积定理：
 
-  记
+   记
 
-  $$L[f(t)]=F(s);L[g(t)]=G(s)$$
+    $$L[f(t)]=F(s)$$
+    $$L[g(t)]=G(s)$$
+    $$f(t)*g(t)=\int_{0}^{\infty}f(t-x)g(x)dx=\int_{0}^{\infty}f(x)g(t-x)dx$$
 
-  $$f(t)*g(t)=\int_{0}^{\infty}f(t-x)g(x)dx=\int_{0}^{\infty}f(x)g(t-x)dx$$
+   则
+     $$L[f(t)*g(t)]=F(s)\cdot G(s)$$
+     $$L[f(t)\cdot g(t)]=F(s)*G(s)$$
 
-  则
-
-  $$L[f(t)*g(t)]=F(s)\cdot G(s)$$
-
-  $$L[f(t)\cdot g(t)]=F(s)*G(s)$$
-
-__传递函数：零初始条件下的拉氏变换之比__
+传递函数：零初始条件下的拉氏变换之比
 
 ### 梅森(Mason)公式
 
 需要先作出系统的信号流图，用熟了也可以直接用方框图
 
-系统闭环传函为：
+系统闭环传函：
 
 $$T=\frac{1}{\Delta}\sum\limits_{k=1}^{n}p_k\cdot\Delta_k$$
 
@@ -78,13 +76,13 @@ $$T=\frac{1}{\Delta}\sum\limits_{k=1}^{n}p_k\cdot\Delta_k$$
 
 $p_k$： 第k条前向通道(的增益)
 
-特征式：
+$\Delta=1-\sum\limits L_1+\sum\limits L_2-\sum\limits L_3+\cdots+(-1)^n\sum L_n$
 
-$$\delta=1-\sum\limits L_1+\sum\limits L_2-\sum\limits L_3+\cdots+(-1)^n\sum L_n$$
+$L_1$：单独回环增益
 
-  $L_1$：单独回环增益
-  $L_2$：互不接触(无公共节点)回环增益两两相乘的乘积之和
-  $L_2$：互不接触(无公共节点)回环增益每三个相乘的乘积之和
+$L_2$：互不接触(无公共节点)回环增益两两相乘的乘积之和
+
+$L_2$：互不接触(无公共节点)回环增益每三个相乘的乘积之和
 
 $\Delta_k$：去掉$p_k$所有节点和边后的信号流图的$\Delta$
 
