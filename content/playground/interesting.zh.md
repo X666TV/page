@@ -11,6 +11,8 @@ toc : false
 
 [在线红白机模拟器](https://may-fly.gitee.io/#/nes-game)
 
+[今天吃什么](http://guozhivip.com/eat/)
+
 {{< admonition warning >}}
 以下网站可能含有闪烁的图片
 {{< /admonition >}}
