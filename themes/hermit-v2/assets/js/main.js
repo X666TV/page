@@ -146,3 +146,18 @@ if(rightImg!=null){
     allLoaded()
   }
 }
+
+//动态标题
+var OriginTitile = document.title;
+document.addEventListener("visibilitychange",
+function() {
+    if (document.hidden) {
+        document.title = "_(:з)∠)_";
+    } else {
+        document.title = "(/≧▽≦/)" ;
+        titleTime = setTimeout(function() {
+            document.title = OriginTitile
+        },
+        800)
+    }
+});
