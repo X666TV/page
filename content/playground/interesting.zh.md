@@ -13,6 +13,8 @@ toc : false
 
 [今天吃什么](http://guozhivip.com/eat/)
 
+[浏览器上玩mc](https://web-mc.pages.dev/)
+
 {{< admonition warning >}}
 以下网站可能含有闪烁的图片
 {{< /admonition >}}

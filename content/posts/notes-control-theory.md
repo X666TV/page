@@ -7,6 +7,8 @@ tags : ['笔记']
 toc : ture
 mathjax : ture
 ---
+
+
 考研时的笔记，用于快速查阅，所以记得非常零散；笔记本快翻烂了，转移到电脑上。由于个人能力有限。不能保证笔记中的内容全都正确，如发现错误，欢迎在[GitHub](https://github.com/X666TV/page/issues)上留言。
 
 ## 经典控制理论部分
@@ -121,7 +123,40 @@ $$c(t)=1-e^{-\frac{t}{T}}$$
 * 上升时间也指10%~90%所用时间，此时$t_r=2.2T$，常用于过阻尼系统
 * 一阶系统的单位阶跃响应不存在峰值时间$T_p$（或者说峰值时间为无穷大）、超调量$\sigma$或$\sigma\%$、衰减比n。
 
+单位斜坡响应
+
+$$C(s)=\frac{1}{s^2}\cdot\frac{1}{Ts+1}$$
+
+$$c(t)=t-T+Te^{-\frac{t}{T}}$$
+
 ### 二阶系统
+
+![标准二阶系统 ](../assets/标准二阶系统.svg)
+
+闭环传函：$\Phi(s)=\frac{C(s)}{R(s)}=\frac{\omega_n^2}{s^2+2\xi_n\omega_ns+\omega_n^2}$
+
+$\xi$：阻尼比
+
+$\omega_n$：（无阻尼）自然振荡角频率，固有频率
+
+$\omega_d=\omega_n\sqrt{1-\xi^2}$：阻尼振荡频率
+
+| 阻尼比    | 系统类型     | 特征根分布           | 根       |
+| --------- | ------------ | -------------------- | -------- |
+| $\xi=0$   | 无阻尼系统   | 一对共轭纯虚根       | $\lambda_{1,2}=\pm j\omega_n $ |
+| $0<\xi<1$ | 欠阻尼系统   | 一对共轭复根         | $\lambda_{1,2}=-\xi\omega_n\pm j\omega_d$ |
+| $\xi=1$   | 临界阻尼系统 | 两个相等的负实根     | $\lambda_1=\lambda_2=-\omega_n$ |
+| $\xi>1$   | 过阻尼系统   | 两个不等的负实根     | $\lambda_{1,2}=-\xi\omega_n\pm\omega_d$ |
+| $\xi<0$   | 发散         | 存在位于正半平面的根 | $\cdots$ |
+
+> 标准二阶欠阻尼系统的单位阶跃响应推导
+$$
+\begin{align*}
+C(s)= & \mathit{\Phi}(s)R(s) \\\\
+= & \frac{1}{s}\cdot\frac{\omega_n^2}  {s^2+2\xi_n\omega_ns+\omega_n^2}\\\\
+= & \frac{1}{s} \\\\
+\end{align*}
+$$
 
 ## 现代控制理论部分
 
